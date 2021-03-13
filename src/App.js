@@ -1,22 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import InputField from "./components/InputField";
 
 function App() {
+  const [savings, setSavings] = React.useState(0);
+  const [interestRate, setInterestRate] = React.useState(0);
+  const [time, setTime] = React.useState(0);
+  const onSavingsChange = (e) => setSavings(+e.target.value);
+  const onInterestRateChange = (e) => setInterestRate(+e.target.value);
+  const onTimeChange = (e) => setTime(+e.target.value);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <form>
+          <div>
+            <InputField
+              label="Savings: "
+              id="savings"
+              value={savings}
+              onChange={onSavingsChange}
+            />
+          </div>
+          <div>
+            <InputField
+              label="Interest rate: "
+              id="rate"
+              value={interestRate}
+              onChange={onInterestRateChange}
+            />
+          </div>
+          <div>
+            <InputField
+              label="Time: "
+              id="time"
+              value={time}
+              onChange={onTimeChange}
+            />
+          </div>
+        </form>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Result:{" "}
+          {Math.round(savings * (1 + interestRate / 100) ** time * 100) / 100}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
