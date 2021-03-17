@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/financial-calculator/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/financial-calculator/static/js/main.2be7e1f5.chunk.js",
+    "main.js.map": "/financial-calculator/static/js/main.2be7e1f5.chunk.js.map",
+    "runtime-main.js": "/financial-calculator/static/js/runtime-main.9d63f8e4.js",
+    "runtime-main.js.map": "/financial-calculator/static/js/runtime-main.9d63f8e4.js.map",
+    "static/js/2.e6382552.chunk.js": "/financial-calculator/static/js/2.e6382552.chunk.js",
+    "static/js/2.e6382552.chunk.js.map": "/financial-calculator/static/js/2.e6382552.chunk.js.map",
+    "static/js/3.34e63f89.chunk.js": "/financial-calculator/static/js/3.34e63f89.chunk.js",
+    "static/js/3.34e63f89.chunk.js.map": "/financial-calculator/static/js/3.34e63f89.chunk.js.map",
+    "index.html": "/financial-calculator/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/financial-calculator/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.e6382552.chunk.js.LICENSE.txt": "/financial-calculator/static/js/2.e6382552.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d63f8e4.js",
+    "static/js/2.e6382552.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.2be7e1f5.chunk.js"
+  ]
+}
