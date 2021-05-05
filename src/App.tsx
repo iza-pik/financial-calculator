@@ -17,13 +17,13 @@ const Body = styled.div`
 
 const DivGreen = styled.div`
   color: lightgreen;
-  text-shadow: 1.5px 1.5px lightseagreen;
+  text-shadow: 0.1vw 0.1vw lightseagreen;
   font-size: 1.3vw;
 `;
 
 const ParaGold = styled.p`
   color: beige;
-  text-shadow: 1.5px 1.5px goldenrod;
+  text-shadow: 0.1vw 0.1vw goldenrod;
   font-size: 1.3vw;
   transition: ease 0.25 all;
   :hover {
@@ -35,7 +35,7 @@ const ParaGold = styled.p`
 
 const HeaderStyle = styled.header`
   color: goldenrod;
-  text-shadow: 2px 2px darkgoldenrod;
+  text-shadow: 0.2vw 0.1vw darkgoldenrod;
   font-weight: bold;
   font-size: 1.5vw;
   padding: 0;
@@ -47,9 +47,9 @@ function App() {
   const [savings, setSavings] = React.useState(0);
   const [interestRate, setInterestRate] = React.useState(0);
   const [time, setTime] = React.useState(0);
-  const onSavingsChange = (e) => setSavings(+e.target.value);
-  const onInterestRateChange = (e) => setInterestRate(+e.target.value);
-  const onTimeChange = (e) => setTime(+e.target.value);
+  const onSavingsChange = (e: any) => setSavings(+e.target.value);
+  const onInterestRateChange = (e: any) => setInterestRate(+e.target.value);
+  const onTimeChange = (e: any) => setTime(+e.target.value);
   return (
     <Body>
       <HeaderStyle>
@@ -63,6 +63,7 @@ function App() {
         <DivGreen>
           <InputField
             label="Savings: "
+            type="number"
             id="savings"
             value={savings}
             onChange={onSavingsChange}
@@ -72,6 +73,7 @@ function App() {
         <DivGreen>
           <InputField
             label="Interest rate: "
+            type="number"
             id="rate"
             value={interestRate}
             onChange={onInterestRateChange}
@@ -81,6 +83,7 @@ function App() {
         <DivGreen>
           <InputField
             label="Time: "
+            type="number"
             id="time"
             value={time}
             onChange={onTimeChange}
